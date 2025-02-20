@@ -75,7 +75,7 @@ function App() {
     <div className="min-h-screen bg-gray-100 py-2 flex flex-col justify-center items-center">
       <div className="w-11/12 h-[90vh] bg-white shadow-xl rounded-xl overflow-hidden">
         <div className="w-full h-full p-6">
-          <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">Resume Builder</h1>
+          <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">Resume Builder (Beta)</h1>
           
           <div className="flex flex-col md:flex-row h-[calc(100%-60px)]">
             <div className="w-full md:w-1/2 pr-0 md:pr-6 mb-4 md:mb-0 overflow-auto h-full">
