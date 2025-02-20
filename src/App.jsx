@@ -72,14 +72,14 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 py-2 flex flex-col justify-center items-center">
-      <div className="w-11/12 h-[90vh] bg-white shadow-xl rounded-xl overflow-hidden">
+    <div className="min-h-screen bg-slate-50 py-2 flex flex-col justify-center items-center font-['Inter']">
+      <div className="w-11/12 h-[90vh] bg-white-200 shadow-xl rounded-xl overflow-hidden border border-slate-100">
         <div className="w-full h-full p-6">
-          <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">Resume Builder (Beta)</h1>
+          <h1 className="text-3xl font-light text-center text-slate-800 mb-6">Resume Builder <span className="text-sm text-slate-400 align-text-top">Beta</span></h1>
           
           <div className="flex flex-col md:flex-row h-[calc(100%-60px)]">
             <div className="w-full md:w-1/2 pr-0 md:pr-6 mb-4 md:mb-0 overflow-auto h-full">
-              <div className="bg-white rounded-lg p-6 shadow-inner h-full">
+              <div className="bg-white rounded-lg p-6 h-full">
                 <PersonalInfoForm 
                   data={resumeData} 
                   handleChange={handleChange} 
@@ -107,9 +107,9 @@ function App() {
             </div>
 
             <div className="w-full md:w-1/2 pl-0 md:pl-6 h-full">
-              <div className="bg-gray-100 rounded-lg p-4 shadow h-full">
-                <h2 className="text-xl font-semibold mb-4 text-gray-700 pl-2">Resume Preview</h2>
-                <div className="border border-gray-300 rounded-lg shadow-inner h-[calc(100%-40px)] bg-white">
+              <div className="bg-slate-50 rounded-lg p-4 h-full">
+                <h2 className="text-xl font-light mb-4 text-slate-700 pl-2">Preview</h2>
+                <div className="border border-slate-200 rounded-lg h-[calc(100%-40px)] bg-white">
                   <PDFViewer style={{ width: '100%', height: '100%', borderRadius: '0.5rem' }}>
                     <ResumePDF data={resumeData} />
                   </PDFViewer>
